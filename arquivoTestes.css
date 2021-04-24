@@ -1,0 +1,123 @@
+:root {
+  --orange-color: rgb(173 54 7);
+  --primary-color: #447bcc;
+  --success-color: #5cab5c;
+  --danger-color: #ca3e44;
+  --white-color: rgb(221, 212, 212);
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.content {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(61 56 138);
+  text-align: center;
+  height: 500px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.title {
+  color: white;
+  background-color: rgb(173 54 7);
+  font-size: 13px;
+  padding: 4px;
+}
+
+.body p {
+  font-size: 80px;
+  line-height: 58px;
+  padding: 50px;
+  font-weight: bold;
+}
+
+.body span {
+  color: var(--orange-color);
+}
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.card {
+  width: 130px;
+  height: 90px;
+  align-items: center;
+  display: flex;
+  font-size: 23px;
+  padding: 10px;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.card span {
+  color: white;
+}
+
+.left {
+  margin-left: 141px;
+}
+
+.right {
+  margin-left: 114px;
+}
+
+.first {
+  background-color: var(--primary-color);
+}
+
+.second {
+  background-color: var(--success-color)
+}
+
+.third {
+  background-color: var(--danger-color)
+}
+
+span.year {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: var(--white-color);
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  font-size: 14px;
+  padding: 7px;
+  height: 30px;
+  width: 307px;
+  border: 1px solid rgb(187 181 181);
+}
+
+button {
+  background-color: var(--orange-color);
+  height: 30px;
+  padding: 8px;
+  color: var(--white-color);
+  font-weight: bold;
+}

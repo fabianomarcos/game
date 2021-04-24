@@ -1,0 +1,141 @@
+:root {
+  --orange-color: rgb(230 75 13);
+  --gray-color: rgb(49 49 53);
+  --primary-color: #447bcc;
+  --success-color: #5cab5c;
+  --danger-color: #ca3e44;
+  --white-color: rgb(221, 212, 212);
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  padding: 15px;
+  font-size: 21px;
+  list-style: none;
+  font-weight: 500;
+}
+
+li {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: 600;
+  color: var(--white-color);
+  margin: 120px 0 20px;
+}
+
+body {
+  background-color: var(--gray-color);
+  height: 100%;
+}
+
+.body {
+  height: 50vh;
+  background-image: url("Labenu_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 222px;
+  position: relative;
+}
+
+.content {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(61 56 138);
+  text-align: center;
+  height: 100%;
+  width: 98vw;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--white-color);
+  background-color: var(--orange-color);
+  font-size: 17px;
+  padding: 15px;
+  height: 7vh;
+  list-style: none;
+}
+
+.email {
+  margin-right: auto;
+}
+
+span.class-room {
+  padding: 6px 15px;
+  color: white;
+  font-style: italic;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.footer {
+  background-color: var(--white-color);
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  font-size: 14px;
+  padding: 7px;
+  height: 30px;
+  width: 307px;
+  border: 1px solid rgb(187 181 181);
+}
+
+button {
+  background-color: var(--orange-color);
+  height: 30px;
+  padding: 8px;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  transition-duration: 500ms;
+  background: linear-gradient(168.34deg, rgba(255, 77, 53, 0.671) 0%, rgb(230 75 13) 100%);
+}
+
+@media(max-width: 800px) {
+  .email {
+    display: none;
+  }
+}
+
+@media(max-width: 500px) {
+  .header {
+    justify-content: center;
+    height: 5vh;
+  }
+
+  .body {
+    height: 88vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer {
+    height: 7vh;
+  }
+
+  .content {
+    margin: 0 auto;
+  }
+}
